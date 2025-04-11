@@ -1,6 +1,7 @@
 import time
 import Modelo as mod
 import Controlador as con
+from prettytable import PrettyTable
 
 while True:
     print("Sistema de Gestión de Productos Electrónicos.")
@@ -31,22 +32,22 @@ while True:
             con.mostrarProductos()
             time.sleep(1)
         elif op == 4:
-            print("WIP...") 
+            con.actualizarProducto()
             time.sleep(1)
         elif op == 5:
-            print("WIP...")
+            con.eliminarProducto()
             time.sleep(1)
         elif op == 6:
-            print("WIP...")
+            con.buscar_productos_por_categoria()
             time.sleep(1)
         elif op == 7:
-            print("WIP...")
+            con.productos_con_poco_stock()
             time.sleep(1)
         elif op == 8:
-            print("WIP...")
+            con.buscar_productos_por_precio()
             time.sleep(1)
         elif op == 9:
-            print("WIP...")
+            con.buscar_productos_por_nombre()
             time.sleep(1)
         elif op == 0:
             exit()
