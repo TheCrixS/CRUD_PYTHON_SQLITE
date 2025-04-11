@@ -66,7 +66,7 @@ def eliminarProducto():
         print("El producto se eliminó correctamente.")
 
 def buscar_productos_por_categoria():
-    categoria = input("Ingrese la categoría del producto: ")
+    categoria = input("Ingrese la categoría del producto: ").title()
     conn = db.connect("Productos.db")
     cursor = conn.cursor()
     query = "SELECT * FROM T_Productos WHERE categoria = ?"
@@ -114,7 +114,7 @@ def buscar_productos_por_precio():
         print("No se encontraron productos en ese rango de precios.")
 
 def buscar_productos_por_nombre():
-    nombre_parcial = input("Ingrese el nombre (o parte del nombre) del producto: ")
+    nombre_parcial = input("Ingrese el nombre (o parte del nombre) del producto: ").title()
     conn = db.connect("Productos.db")
     cursor = conn.cursor()
     query = "SELECT * FROM T_Productos WHERE nombre LIKE ?"
