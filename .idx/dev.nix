@@ -10,6 +10,7 @@
     pkgs.python312
     pkgs.python312Packages.pip
     pkgs.python312Packages.prettytable
+    pkgs.zip
     # pkgs.nodejs_20
     # pkgs.nodePackages.nodemon
   ];
